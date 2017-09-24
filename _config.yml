@@ -30,6 +30,29 @@ theme: minima
 plugins:
   - jekyll-feed
 
+assets:
+    prefix: "assets"
+    sources:
+        -   _assets/css
+        -   _assets/img
+        -   _assets/js
+        -   _assets/lib
+    digest: false
+    assets:
+      - "*.png"
+      - "*.PNG"
+      - "*.svg"
+      - "*.js"
+      - "*.min.js"
+      - "main.css"
+      - "*.min.css"
+    compress:
+        css: sass
+        js: uglifier
+    features:
+        automatic_img_alt: true
+        automatic_img_size: false
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

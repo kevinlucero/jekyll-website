@@ -1,4 +1,5 @@
 _site
 _post/
 .sass-cache
+.asset-cache
 .jekyll-metadata
